@@ -14,8 +14,12 @@
 
     initClient负责接收服务端发出的消息，并且对信息进行初步分析：是广播内容还是描述连接成功的信息
     若是广播内容：打印消息并且回复，请求连接，并在接到第一条广播后记录服务端ip
-    若是连接成功的消息：打印“connected”，并将connected变量置为true
+    若是连接成功的消息：打印消息，打印“connected”，并将connected变量置为true
 
 #### 此外
 
     main函数中的Sleep(5000)是为了模拟客户端在服务端广播开始后一段时间才开始监听
+
+#### 运行截图
+    
+![image](https://github.com/zwz1551719/boost-asio-demo/raw/master/asio_running.PNG)
